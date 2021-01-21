@@ -1,0 +1,203 @@
+
+@namespace 'http://www.w3.org/1999/xhtml';
+
+/* fonts */
+
+@font-face {
+    font-family: 'Noto Emoji';
+    src: url(/assets/NotoEmoji-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Noto Sans Symbols2';
+    src: url(/assets/NotoSansSymbols2-Regular.ttf);
+}
+
+:root {
+    --font-sans: 'Fira Sans', 'Noto Emoji', 'Noto Sans JP', 'Noto Sans Symbols2', system-ui, sans-serif;
+    --font-serif: 'Zilla Slab', 'Noto Emoji', 'Noto Serif JP', 'Noto Sans Symbols2', serif;
+    --font-sans-adjust: 0.529167;
+    --font-serif-adjust: 0.446875;
+    --font-weight-main: 300; /* light */
+    --font-weight-bold: 500; /* medium */
+}
+
+/* global resets */
+
+:root {
+    --menhera-brand-primary-color: #5eaf30;
+    --dark-primary-color: #222;
+    --dark-text-color: #eee;
+    font-size: 100%;
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-main);
+    font-size-adjust: var(--font-sans-adjust);
+}
+
+::selection {
+    background-color: var(--menhera-brand-primary-color);
+    color: var(--dark-text-color);
+}
+
+body {
+    margin: 0;
+}
+
+textarea, button, input, select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: var(--menhera-brand-primary-color);
+}
+
+strong, tt, th, h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--font-weight-bold);
+}
+
+h2 {
+    font-family: var(--font-serif);
+    font-size-adjust: var(--font-serif-adjust);
+}
+
+blockquote {
+    font-size: 150%;
+    font-family: var(--font-serif);
+    font-size-adjust: var(--font-serif-adjust);
+    margin: 0;
+    padding-block: 1em;
+    padding-inline: 2rem;
+    text-align: start;
+    max-inline-size: 50rem;
+    margin-inline-start: auto;
+    background-color: rgba(163, 93, 0, .1);
+}
+
+
+/* individual element styles */
+
+#org-header-logo {
+    width: 24em;
+    max-width: 100%;
+}
+
+#org-header-link {
+    display: block;
+}
+
+#org-header-nav {
+    background-color: var(--menhera-brand-primary-color);
+    color: var(--dark-text-color);
+}
+
+#org-header-nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+}
+
+#org-header-nav > ul > li > a {
+    display: block;
+    padding-inline: 1em;
+    padding-block: .5em;
+    text-align: center;
+    color: var(--dark-text-color);
+}
+
+#org-main h2 {
+    background-color: var(--dark-primary-color);
+    color: var(--dark-text-color);
+    margin: 0;
+    padding-block: 1.25rem;
+    padding-inline: .75rem;
+    border: solid .5rem white;
+    margin-block: .5rem;
+    margin-inline: auto;
+    max-inline-size: 72rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+#org-main > section {
+    max-inline-size: 72rem;
+    box-sizing: border-box;
+    margin-block: 1rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+#top-banner {
+    background-image: url(/assets/2560px-The_earth_at_night.jpg);
+    background-color: var(--dark-primary-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 1em;
+    text-align: end;
+    font-size: 200%;
+    color: var(--dark-text-color);
+    min-block-size: 10vmin;
+}
+
+.banner-block {
+    font-family: var(--font-sans);
+    font-size-adjust: var(--font-sans-adjust);
+    font-weight: 700;
+    color: transparent;
+    background-image: linear-gradient(to left, #496a25, #2a6974);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    font-size: 6vw;
+}
+
+.menhera-green {
+    background-color: var(--menhera-brand-primary-color);
+    color: var(--dark-text-color);
+    padding: 1rem;
+    font-size: 150%;
+    border-radius: .5rem;
+}
+
+.member {
+    background-image: attr(data-icon-url);
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr max-content;
+}
+
+.member > main {
+    margin-inline-end: 1rem;
+}
+
+.member-icon {
+    background-image: linear-gradient(to bottom,  #f2f2f2, transparent);
+    display: block;
+    margin: 0;
+    border-inline-start: solid .25rem var(--dark-primary-color);
+}
+
+.member-icon > img {
+    inline-size: 30vmin;
+    max-inline-size: 10em;
+    display: block;
+}
+
+#org-footer {
+    background-color: var(--menhera-brand-primary-color);
+    color: var(--dark-text-color);
+    font-size: 87.5%;
+}
+
+#org-footer > section {
+    max-inline-size: 72rem;
+    box-sizing: border-box;
+    margin-block: 0;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+}
