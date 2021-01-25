@@ -67,8 +67,10 @@ blockquote {
     font-family: var(--font-serif);
     font-size-adjust: var(--font-serif-adjust);
     margin: 0;
-    padding-block: 1em;
-    padding-inline: 2rem;
+    padding-block-start: 1em;
+    padding-block-end: 1em;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
     text-align: start;
     max-inline-size: 50rem;
     margin-inline-start: auto;
@@ -103,8 +105,10 @@ blockquote {
 
 #org-header-nav > ul > li > a {
     display: block;
-    padding-inline: 1em;
-    padding-block: .5em;
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
+    padding-block-start: .5em;
+    padding-block-end: .5em;
     text-align: center;
     color: var(--dark-text-color);
 }
@@ -113,11 +117,15 @@ blockquote {
     background-color: var(--dark-primary-color);
     color: var(--dark-text-color);
     margin: 0;
-    padding-block: 1.25rem;
-    padding-inline: .75rem;
+    padding-block-start: 1.25rem;
+    padding-block-end: 1.25rem;
+    padding-inline-start: .75rem;
+    padding-inline-end: .75rem;
     border: solid .5rem white;
-    margin-block: .5rem;
-    margin-inline: auto;
+    margin-block-start: .5rem;
+    margin-block-end: .54rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
     max-inline-size: var(--main-inline-size);
     box-sizing: border-box;
     border-radius: 1rem;
@@ -126,9 +134,12 @@ blockquote {
 #org-main > section {
     max-inline-size: var(--main-inline-size);
     box-sizing: border-box;
-    margin-block: 1rem;
-    margin-inline: auto;
-    padding-inline: 1rem;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
 }
 
 #top-banner {
@@ -149,7 +160,7 @@ blockquote {
     font-size-adjust: var(--font-sans-adjust);
     font-weight: 700;
     color: transparent;
-    background-image: linear-gradient(to left, #496a25, #2a6974);
+    background-image: linear-gradient(to bottom, #496a25, #2a6974);
     -webkit-background-clip: text;
     background-clip: text;
     text-align: center;
@@ -197,8 +208,12 @@ blockquote {
 #org-footer > section {
     max-inline-size: var(--main-inline-size);
     box-sizing: border-box;
-    margin-block: 0;
-    margin-inline: auto;
-    padding-inline: 1rem;
-    padding-block: .5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-inline-start: 1rem;
+    padding-inline-end: 1rem;
+    padding-block-start: .5rem;
+    padding-block-end: .5rem;
 }
