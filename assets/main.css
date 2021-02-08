@@ -13,9 +13,14 @@
     src: url(/assets/NotoSansSymbols2-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'UniHentaiKana';
+    src: url(/assets/UniHentaiKana-Regular.woff);
+}
+
 :root {
-    --font-sans: 'Fira Sans', 'Noto Emoji', 'Noto Sans JP', 'Noto Sans Symbols2', system-ui, sans-serif;
-    --font-serif: 'Zilla Slab', 'Noto Emoji', 'Noto Serif JP', 'Noto Sans Symbols2', serif;
+    --font-sans: 'Fira Sans', 'Noto Emoji', 'Noto Sans JP', 'UniHentaiKana', 'Noto Sans Symbols2', system-ui, sans-serif;
+    --font-serif: 'Zilla Slab', 'Noto Emoji', 'Noto Serif JP', 'UniHentaiKana', 'Noto Sans Symbols2', serif;
     --font-sans-adjust: 0.529167;
     --font-serif-adjust: 0.446875;
     --font-weight-main: 300; /* light */
